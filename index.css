@@ -71,22 +71,15 @@ body {
   padding-left: 300px;
 }
 
-.article-container {
-  margin: 0 auto;
-}
-
-.pagination1,
-.pagination2,
-.pagination3,
-.pagination4 {
-  height: 100vh;
+.pagination1 {
+  height: 80vh;
   overflow: hidden;
   position: relative;
 }
 
 .article-background {
   position: relative;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   font-size: 5em;
@@ -151,52 +144,20 @@ body {
   text-shadow: 4px 2px 2px black;
 }
 
-.container {
+.pagination2,
+.pagination3,
+.pagination4 {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  min-width: 1200px;
+
   padding: 40px;
-}
-
-#about-inner1-image {
-  /*animation: rotate_image 6s linear infinite, scale1 6s linear infinite;*/
-  width: 300px;
-  float: left;
-}
-@keyframes rotate_image {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes scale {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-
-.about-inner-contents {
-  padding: 30px;
-  float: left;
-}
-
-#about-contents {
-  line-height: 30px;
 }
 
 .point {
   font-size: 20px;
   font-weight: bold;
   color: #3366cc;
-}
-
-.about-inner2 {
-  padding-top: 16px;
-  clear: both;
 }
 
 .distinguish-year {
@@ -206,5 +167,176 @@ body {
 .point2 {
   font-size: 20px;
   font-weight: bold;
+}
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  padding: 40px 0;
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+}
+.about-img {
+  text-align: center;
+}
+.about-img > img {
+  display: flex;
+  width: 90%;
+}
+
+.about-content {
+  padding-top: 40px;
+}
+
+.span-pretty {
+  line-height: 34px;
+}
+
+.pagination2 > h1 {
+  text-align: center;
+}
+
+.skill-container {
+  display: flex;
+  justify-content: center;
+}
+
+.skill-inner {
+  padding: 30px;
+  width: 80%;
+  border: 10px solid #eee8aa;
+  border-radius: 50px;
+}
+
+.progress-bar {
+  margin-left: 30px;
+  width: 100%;
+  height: 30px;
+  background-color: #eee8aa;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+.progress-bar .progress-html {
+  width: 70%;
+  height: 30px;
+  padding: 0;
+  text-align: center;
+  background-color: #4f98ff;
+  color: #111;
+}
+
+.progress-bar .progress-css {
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  text-align: center;
+  background-color: #4f98ff;
+  color: #111;
+}
+
+.progress-bar .progress-js {
+  width: 60%;
+  height: 30px;
+  padding: 0;
+  text-align: center;
+  background-color: #4f98ff;
+  color: #111;
+}
+
+.progress-bar .progress-react {
+  width: 80%;
+  height: 30px;
+  padding: 0;
+  text-align: center;
+  background-color: #4f98ff;
+  color: #111;
+}
+
+#img-logo {
+  margin-left: 10px;
+  width: 30px;
+}
+#img-logo:hover {
+  opacity: 0.7;
+}
+.logo {
+  padding-top: 5px;
+}
+.skill {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-inner {
+  padding: 30px;
+  width: 60%;
+  border: 10px solid #90ee90;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-weight: 600;
+  height: 500px;
+}
+
+@media (max-width: 1500px) {
+  .about-img > img {
+    width: 100%;
+  }
+
+  .about-content {
+    padding-top: 40px;
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .about-container {
+    display: flex;
+    justify-content: center;
+  }
+  .span-pretty {
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-container {
+    display: inline;
+  }
+
+  .skill-inner {
+    width: 80%;
+  }
+
+  #name::after {
+    font-size: 60px;
+  }
+
+  #writing {
+    width: 100%;
+    color: transparent;
+    font-size: 25px;
+    white-space: nowrap;
+  }
+
+  @keyframes typing {
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 260px;
+    }
+    100% {
+      width: 0%;
+    }
+  }
 }
 /*본문 css end*/
